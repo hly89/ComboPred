@@ -6,8 +6,15 @@ ComboPred is part of drug combination prediction and test (DCPT) platform. Combo
 ![](man/figures/combopred.png)
 
 ## Usage
+Data preparation: drug-target interaction matrix, gene expression data for each individual sample, mutation data for each individual sample, drug responses (DSS).  Example data could be found in <https//github.com/hly89/ComboPred/tree/master/data>.
 
-
+Run the following command to predict combination response and synergy score and results are save as csv files:
+```
+ComboPred (gex, mut, dtm,
+                      model.iteration = 6, response, 
+                      patient.index = 1, 
+                      control.index = 1)
+```
 ## Support 
 If you have any problems in using ComboPred, please contace **Liye He** (liye.he@helsinki.fi)
 
