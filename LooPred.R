@@ -20,7 +20,7 @@ LooPred <- function(training.data, response, rm.idx) {
   
   loo.ctrl <- loo.ctrl[-1, ]
   loo.ctrl <- data.frame(loo.ctrl, stringsAsFactors = F)
-  loo.ctrl$id <- as.numeric(loo.ctrl)
+  loo.ctrl$id <- as.numeric(loo.ctrl$id)
   loo.ctrl$DSS.pred <- as.numeric(loo.ctrl$DSS.pred)
   return(loo.ctrl)
 }
