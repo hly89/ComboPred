@@ -20,3 +20,5 @@ If you have any problems in using ComboPred, please contace **Liye He** (liye.he
 
 ## Copyright & License
 
+Code released under the MIT license.
+
