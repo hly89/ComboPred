@@ -82,13 +82,13 @@ ComboPred <- function(gex, mut, dtm,
   # for patients
   
   for (i in p.id) {
-    pred(dtm, gex, mut, models, model.iteration,
+    Pred(dtm, gex, mut, models, model.iteration,
                      response, i, loo.p)
     
   }
   # for controls
   for(i in ctrl.id) {
-    pred(dtm, gex, mut, models, model.iteration,
+    Pred(dtm, gex, mut, models, model.iteration,
          response, i, loo.ctrl)
   }
 }
